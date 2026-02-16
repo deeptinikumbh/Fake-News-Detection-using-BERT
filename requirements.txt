@@ -1,0 +1,8 @@
+tensorflow==2.19.0
+transformers==4.41.2
+tensorflow-hub
+scikit-learn
+matplotlib
+numpy
+pandas
+

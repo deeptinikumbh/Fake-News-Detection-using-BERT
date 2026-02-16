@@ -1,0 +1,18 @@
+# Use official Python image
+FROM python:3.12
+
+# Set working directory
+WORKDIR /app
+
+# Copy project files
+COPY . /app
+
+# Install dependencies
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+# Set environment variable for legacy Keras
+ENV TF_USE_LEGACY_KERAS=1
+
+# Default command (change if needed)
+CMD ["python", "app/training.py"]
