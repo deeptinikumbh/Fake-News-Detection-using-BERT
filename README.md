@@ -20,23 +20,16 @@ Includes evaluation metrics such as:
 - Accuracy, Precision, Recall, F1-Score
 
 ---
-
-## Trained Model
-
-The trained `.h5` model file is not included due to GitHub size limits.
-
-Download it from Google Drive:
-
-** **
-
-After downloading, place it inside: models/title_feature_model.h5
+Datasets:
+The dataset used can be found at following link:
+https://github.com/KaiDMML/FakeNewsNet/tree/master/dataset
 
 ---
 
 ##Installation (Without Docker)
 
 ```bash
-git clone https://github.com/deeptinikumbh/fake-news-bert.git
+git clone https://github.com/deeptinikumbh/Fake-News-Detection-using-BERT.git
 cd fake-news-bert
 pip install -r requirements.txt
 python app/training.py
@@ -65,5 +58,15 @@ docker run fake-news-bert
 ??? Dockerfile
 ??? requirements.txt
 ??? README.md
+
+##Citation
+@article{shu2018fakenewsnet,
+  title={FakeNewsNet: A Data Repository with News Content, Social Context and Dynamic Information for Studying Fake News on Social Media},
+  author={Shu, Kai and  Mahudeswaran, Deepak and Wang, Suhang and Lee, Dongwon and Liu, Huan},
+  journal={arXiv preprint arXiv:1809.01286},
+  year={2018}
+}
+
+
 
 
